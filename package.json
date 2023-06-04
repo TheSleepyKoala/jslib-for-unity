@@ -1,0 +1,25 @@
+{
+  "name": "jslib",
+  "displayName": "JSLib",
+  "description": "JSLib Programming Language",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "jslib",
+      "aliases": ["JSLib Programming Language", "jslib"],
+      "extensions": [".jslib"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "jslib",
+      "scopeName": "source.jslib",
+      "path": "./syntaxes/jslib.tmLanguage.json"
+    }]
+  }
+}
