@@ -1,0 +1,1 @@
+Uses the grammar from vscode-language-babel (https://github.com/michaelgmcd/vscode-language-babel)
