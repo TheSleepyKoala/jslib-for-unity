@@ -1,32 +1,78 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "JSLib Programming Language",
-	"patterns": [
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		}
-	],
-	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.jslib",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.jslib",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.jslib",
-					"match": "\\\\."
-				}
-			]
-		}
-	},
-	"scopeName": "source.jslib"
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "JSLib Programming Language",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#ctrl-statements"
+        },
+        {
+            "include": "#reserved-words"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.jslib",
+                    "match": "//.*$"
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.jslib",
+                    "match": "\\+|-|\\*|/|%|\\^|\\(|\\)|\\{|\\}|\\[|\\]|=|>|<|!|&|\\||\\?|:|~|,"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.jslib",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.jslib",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "name": "constant.numeric.jslib",
+                    "match": "\\b(0x[0-9a-fA-F]+|\\d+)\\b"
+                }
+            ]
+        },
+        "ctrl-statements": {
+            "patterns": [
+                {
+                    "name": "keyword.control.jslib",
+                    "match": "\\b(if|while|switch|case|default|break|continue|return|for|do|else|try|catch|finally|throw|new|delete|typeof|instanceof|in)\\b"
+                }
+            ]
+        },
+        "reserved-words": {
+            "patterns": [
+                {
+                    "name": "keyword.reserved.jslib",
+                    "match": "\\b(this|super|true|false|null|undefined|NaN|Infinity|arguments|eval|with|var|let|const|function|class|extends|implements|interface|package|private|protected|public|static|yield|import|export|as|from|of)\\b"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.jslib"
 }
