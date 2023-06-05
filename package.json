@@ -1,13 +1,35 @@
 {
-  "name": "jslib",
-  "displayName": "JSLib",
-  "description": "JSLib Programming Language",
-  "version": "0.0.1",
+  "name": "jslib-for-unity",
+  "description": "Provides support for the JSLib extension for Unity",
+  "displayName": "JSLib for Unity",
+  "icon": "images/jslib.png",
+  "author": "Abdul-Kadir Coskun",
+  "publisher": "thesleepykoala",
+  "license": "MIT",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheSleepyKoala/jslib-for-unity"
+  },
+  "bugs": {
+    "url": "https://github.com/TheSleepyKoala/jslib-for-unity/issues"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
+  "sponsor": {
+    "url": "https://github.com/sponsors/Chizaruu"
+  },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Other"
+  ],
+  "keywords": [
+    "jslib",
+    "unity",
+    "javascript",
+    "js",
+    "jslib-for-unity"
   ],
   "contributes": {
     "languages": [{
