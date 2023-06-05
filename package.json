@@ -6,7 +6,7 @@
   "author": "Abdul-Kadir Coskun",
   "publisher": "thesleepykoala",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/TheSleepyKoala/jslib-for-unity"
@@ -32,16 +32,25 @@
     "jslib-for-unity"
   ],
   "contributes": {
-    "languages": [{
-      "id": "jslib",
-      "aliases": ["JSLib Programming Language", "jslib"],
-      "extensions": [".jslib"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "jslib",
-      "scopeName": "source.jslib",
-      "path": "./syntaxes/jslib.tmLanguage.json"
-    }]
+    "languages": [
+      {
+        "id": "jslib",
+        "aliases": [
+          "JSLib Programming Language",
+          "jslib"
+        ],
+        "extensions": [
+          ".jslib"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jslib",
+        "scopeName": "source.jslib",
+        "path": "./syntaxes/jslib.tmLanguage.json"
+      }
+    ]
   }
 }
